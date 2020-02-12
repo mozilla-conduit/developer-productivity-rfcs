@@ -28,7 +28,7 @@ In general, the solution proposed in the next step should have an expectation of
 
 This discussion can happen in the issue created in the identify phase, or on another platform. If the discussion happens on another platform, and if this idea proceeds to the next phase, it's a good idea to encapsulate that discussion in the issue or PR.
 
-**PR Label**: `Phase: Draft`
+**PR Label**: `Phase 1: Draft`
 
 ### Make a PR
 
@@ -40,7 +40,7 @@ Once you have a goal and potential solution that is expected to pass (though spe
 * Once you have the pull request number, modify the filename to include it (`rfcs/<number>-<rfc-title>.md`).
   Replace `<number>` in the file with the PR number as well.
   Push again.
-* Label the PR `Phase: Draft`
+* Label the PR `Phase 1: Draft`
 
 ### Open PR for comments
 
@@ -64,11 +64,11 @@ When the template RFC can be fully filled out and all comments have been conside
 
 **Number of people involved**: any person or team this may impact or who may care of this change. 
 
-**PR Label**: `Phase: Proposal`
+**PR Label**: `Phase 2: Proposal`
 
 ### Update the RFC
 
-Fill in the remainder of the template, including lots of details, based on the preceding discussion. Push your changes. Add the label `Phase: Proposal` to the PR.
+Fill in the remainder of the template, including lots of details, based on the preceding discussion. Push your changes. Add the label `Phase 2: Proposal` to the PR.
 
 ### Involve larger audience
 
@@ -80,15 +80,15 @@ Now is the time to loop in anybody you know you think will care about this RFC b
 
 **Number of people involved**: major stakeholders in the discussion
 
-**PR Label**: `Phase: Final Comment`
+**PR Label**: `Phase 3: Final Comment`
 
 When the open questions have been answered and you feel that everyone is in agreement or is willing to compromise, it's time for the final-comment period. The intent of this phase is to allow someone to speak up and say, "Uh, no, that's not what I thought we decided as a group" or "I wasn't aware of this proposal, that's crazy", so notification should be distributed broadly. The phase should last long enough for everyone to read the summary and speak up, taking into account timezones, PTO, and email backlogs - use your best judgement. This should be at least 24 hours so that everyone has working-hours to think and respond.
 
-Update the issue's label to `Phase: Final Comment` and send a note summarizing the proposal and indicating the duration for comments to the tools-taskcluster list, or to some other appropriate venue.
+Update the issue's label to `Phase 3: Final Comment` and send a note summarizing the proposal and indicating the duration for comments to the tools-taskcluster list, or to some other appropriate venue.
 
 ## Decided phase
 
-When the final comment period has expired, if there have been no objections, mark the issue as `Phase: Decided`, file a tracker bug, update the *Implementation* section to point to it, and click `Merge`. Close the PR.
+When the final comment period has expired, if there have been no objections, mark the issue as `Phase 4: Decided`, file a tracker bug, update the *Implementation* section to point to it, and click `Merge`. Close the PR.
 
 **Note:** It is important to not let progress slow by spending cycles on the implementation details as part of the RFC and planning process. Once the RFC has been decided, closing and merging the PR is good practice and any concerns with the implementation should be handled by the specific implementation file tracker bug, code review PR, or source of documentation change.
 
